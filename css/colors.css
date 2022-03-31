@@ -1,0 +1,9 @@
+.bg-orange, .bg-orange-gradient{
+    background-color: rgba(253, 126, 20, 1);
+}
+
+@media only screen and (min-width: 992px){
+    .bg-orange-gradient{
+        background: linear-gradient(to left, rgba(253, 126, 20, 1), rgba(253, 126, 20,.01));
+    }
+}

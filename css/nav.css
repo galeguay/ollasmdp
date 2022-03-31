@@ -1,0 +1,72 @@
+/*On HOME PAGE to ".navbar"
+add: "bg-orange-gradient fixed-top navbar-home" 
+remove: "bg-orange sticky-lg-top "
+*/
+
+.navbar-brand img{
+  height: 50px;
+}
+
+.navbar{
+  min-height: 50px;
+}
+
+@media only screen and (min-width: 992px){
+
+  .navbar{
+    height: 50px;
+  }
+  
+  .navbar-brand img{
+    height: 150%;
+    position: absolute;
+    top:10%;
+  }
+
+  .navbar-home{
+    height: 20vh;
+    min-height: 50px;
+    max-height: 200px;
+    background: linear-gradient(to left, rgba(253, 126, 20, 1),  rgba(253, 126, 20, .01));
+  }
+  
+  .navbar-home img{
+    height: 80%;
+  }
+
+  .anim-navbar-home {
+    animation: anim-navbar-home 1.5s forwards normal;
+  }
+  @keyframes anim-navbar-home {
+    100% {
+        background: rgba(253, 126, 20, 1);
+        height: 50px;
+    }
+  }
+
+  .anim-navbar-home img{
+    animation: anim-navbar-img 1.5s forwards normal;
+  }
+  @keyframes anim-navbar-img {
+    100% {
+        width: auto;
+        height: 150%;
+        position: absolute;
+    }
+  }
+  
+  .anim-navbar {
+    animation: anim-navbar 1.5s forwards normal;
+  }
+  @keyframes anim-navbar {
+    0% {
+        background: linear-gradient(to left, rgba(253, 126, 20, 1),  rgba(253, 126, 20, .01));
+        height: 25vh;
+    }
+    100% {
+        background: rgba(253, 126, 20, 1);
+        height: 50px;
+    }
+  }
+
+}

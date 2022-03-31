@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top bg-opacity-50">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav align-items-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Link2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Link3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    </header>
+  <body>
+    <section>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="images/carousel/1.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel/2.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel/3.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark bg-opacity-50" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark bg-opacity-50" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+  
+    <script>
+      var myCarousel = document.querySelector('#carouselExampleInterval')
+      var carousel = new bootstrap.Carousel(myCarousel)
+    </script>
+    <section class="container">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4 py-5">
+        <div class="col">
+          <h4 class="pb-2 text-center">TITULO</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit id assumenda voluptatum obcaecati non excepturi
+            sed, corporis explicabo quis harum possimus, commodi ducimus quia? Vitae eum laborum ipsam explicabo esse.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsa molestias maxime? Quod quibusdam corrupti
+            ad quam iusto, fuga laborum ea incidunt asperiores! Labore possimus error illo autem quod ipsum.</p>
+        </div>
+        <div class="col">
+          <h4 class="pb-2 text-center">TITULO2</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deserunt corporis ad expedita modi
+            praesentium non reprehenderit voluptates qui, possimus nobis, magnam adipisci, natus accusamus quos ab error
+            soluta aperiam.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur esse possimus architecto placeat omnis
+            est commodi. Porro, rem! Sequi repellat voluptas odio non aspernatur vero laborum cum mollitia culpa ab!</p>
+        </div>
+        <div class="col">
+          <h4 class="pb-2 text-center">TITULO3</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam tempore inventore et aliquid eveniet qui
+            dolore corporis nisi laborum, repellat perferendis labore amet nulla quidem, explicabo laudantium nam. Fugiat,
+            recusandae.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui tempora ipsum laudantium! Cum tempora labore
+            culpa earum dolorem mollitia ipsam suscipit, quae, explicabo, voluptas libero consequatur repudiandae quod?
+            Inventore, commodi?</p>
+        </div>
+      </div>
+    </section>
+  
+    <div class="b-example-divider"></div>
+  
+    <section class="container py-5" id="icon-grid">
+      <h2 class="pb-2 border-bottom">Icon grid</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <img class="me-3" width="30" height="30s" src="images/icons.other/3289555_person_individual_people_woman.svg">
+          <div>
+            <h4 class="fw-bold mb-0">Featured title</h4>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <img class="me-3" width="30" height="30s"
+            src="images/icons.other/3289564_wounded person_disabled person_crippled person_hospital_handicapped person.svg">
+          <div>
+            <h4 class="fw-bold mb-0">Featured title</h4>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <img class="me-3" width="30" height="30s" src="images/icons.other/3289577_run_fast_running.svg">
+          <div>
+            <h4 class="fw-bold mb-0">Featured title</h4>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <img class="me-3" width="30" height="30s"
+            src="images/icons.other/3289567_persons_person_family_group_peers_clan.svg">
+          <div>
+            <h4 class="fw-bold mb-0">Featured title</h4>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <img class="me-3" width="30" height="30s"
+            src="images/icons.other/3289575_speaking_leading_speech_president_leader.svg">
+          <div>
+            <h4 class="fw-bold mb-0">Featured title</h4>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <img class="me-3" width="30" height="30s" src="images/icons.other/3289572_clan_group_love_family_partners.svg">
+          <div>
+            <h4 class="fw-bold mb-0">Featured title</h4>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <img class="me-3" width="30" height="30s"
+            src="images/icons.other/3289554_babies_baby_small baby_toddler_small person.svg">
+          <div>
+            <h4 class="fw-bold mb-0">Featured title</h4>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <img class="me-3" width="30" height="30s"
+            src="images/icons.other/3289558_competition_preparation_sports_running_athletes_athlete_starting position.svg">
+          <div>
+            <h4 class="fw-bold mb-0">Featured title</h4>
+            <p>Paragraph of text beneath the heading to explain the heading.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <div class="b-example-divider"></div>
+  
+    <div class="container text-center py-5">
+      <h2 class="text-dark">¡Seguinos en las redes!</h2>
+      <div class="d-flex h5 py-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos voluptates corporis explicabo ullam quia
+          facilis iusto aperiam ipsam omnis. Amet consequatur nemo numquam minus dolorum fugiat officiis ad et! Quos.</p>
+      </div>
+    </div>
+  
+    <script type="text/javascript">
+      const nb = document.querySelector('#mainNav');
+  
+      window.addEventListener('scroll', function () {
+        if (window.scrollY == 0)
+          nb.classList.toggle("bg-opacity-50");
+        else
+          nb.classList.remove("bg-opacity-50");
+      });
+      document.querySelector('.navbar-toggler').addEventListener('click', function () {
+        console.log("true");
+        //if (nb.classList.contains("bg-opacity-50"))
+        nb.classList.toggle("bg-opacity-50");
+      });
+    </script>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous">
+      </script>
+  </body>
+</body>
+
+</html>
